@@ -2,10 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Neo Nova - AI Assistant</title>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Inline Markdown-Specific Enhancements -->
+  <style>
+    .chat-box strong, .chat-box b {
+      color: #cb00ff;
+    }
+
+    .chat-box em, .chat-box i {
+      color: #ffaa00;
+      font-style: italic;
+    }
+
+    .chat-box code {
+      background-color: #222;
+      color: #0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .chat-box ul {
+      padding-left: 20px;
+      margin: 5px 0;
+    }
+
+    .chat-box li {
+      margin-bottom: 5px;
+    }
+
+    .chat-box a {
+      color: #00ccff;
+      text-decoration: underline;
+    }
+
+    .chat-box h1, .chat-box h2, .chat-box h3 {
+      color: #fff;
+      margin: 10px 0 5px;
+    }
+
+    .chat-box br {
+      line-height: 1.5;
+    }
+
+    .thinking-emoji {
+      display: inline-block;
+      animation: pulseGlow 1.5s infinite;
+    }
+  </style>
 </head>
 <body>
   <main class="container">
@@ -14,14 +66,17 @@
       <p class="subtitle">Your Futuristic AI Assistant</p>
     </header>
 
-    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-box" id="chat-box">
+      <!-- Chat messages will be dynamically inserted here -->
+    </div>
 
     <div class="input-area">
-      <input type="text" id="user-input" placeholder="Type your question..." />
-      <button onclick="sendMessage()">Send</button>
+      <input type="text" id="user-input" placeholder="Type your question..." aria-label="User input field" />
+      <button id="send-button">Send</button>
     </div>
   </main>
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
