@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const API_KEY_GEMINI = "API_KEY_HIDED";
   const API_KEY_GOOGLE = "API_KEY_HIDED";
-  const CX = "87c7fcf5de159496f";
+  const CX = "CX_HIDED";
 
   const inputField = document.getElementById("user-input");
   const sendButton = document.getElementById("send-button");
