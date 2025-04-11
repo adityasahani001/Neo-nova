@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_KEY_GEMINI = "AIzaSyDKksRyt1_MJAs0jwXArKJ7zGne4by1CEM";
-  const API_KEY_GOOGLE = "AIzaSyAPABu5Ajak3W9LzsIUuQcvasmMEMmeuJE";
+  const API_KEY_GEMINI = "API_KEY_HIDED";
+  const API_KEY_GOOGLE = "API_KEY_HIDED";
   const CX = "87c7fcf5de159496f";
 
   const inputField = document.getElementById("user-input");
