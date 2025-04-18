@@ -88,8 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\n/gim, '<br>')
       .replace(/\[([^\]]+)]\(([^)]+)\)/gim, '<a href="$2" target="_blank">$1</a>');
   }
-});
-
-
-
+}
+                         );
 
