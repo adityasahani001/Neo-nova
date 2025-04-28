@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputField = document.getElementById("user-input");
   const sendButton = document.getElementById("send-button");
 
-
-  
   inputField.addEventListener("keypress", (e) => {
     if (e.key === "Enter") sendMessage();
   });
