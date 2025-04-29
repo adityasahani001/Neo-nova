@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
           displayMessage(reply, "bot-message");
         } else {
           displayMessage("🤖 No relevant info found.", "bot-message");
+        
         }
       } catch (error) {
         thinkingMsg.remove();
