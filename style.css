@@ -47,6 +47,7 @@ h1 {
 }
 
 /* Chat Area */
+
 .chat-box {
   height: 500px;
   overflow-y: auto;
