@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     inputField.value = "";
 
     // Show "🤔 Responding..." in chat
-    
     const thinkingMsg = displayMessage("🤔 Responding...", "bot-message", true);
 
     const keywords = ["weather", "temperature", "winner", "score", "news", "today", "time"];
