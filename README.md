@@ -12,7 +12,7 @@ Neo Nova is an AI-powered smart chatbot integrated with Dialogflow, Gemini API, 
 -  Live IPL match info *(optional via Cricket API)*
 -  Google Custom Search for general queries
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Python, Flask
