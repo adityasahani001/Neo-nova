@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           displayMessage("🤖 No relevant info found.", "bot-message");
         
+
+
         }
       } catch (error) {
         thinkingMsg.remove();
