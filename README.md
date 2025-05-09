@@ -1,5 +1,4 @@
-#  Neo Nova Chatbot
-
+## Neo Nova Chatbot
 Neo Nova is an AI-powered smart chatbot integrated with Dialogflow, Gemini API, and real-time data sources like Google Custom Search and OpenWeather. It can answer user queries, fetch real-time data like weather, time, and IPL results, and hold natural conversations.
 
 ##  Features
