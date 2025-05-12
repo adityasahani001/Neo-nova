@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
           displayMessage("🤖 No relevant info found.", "bot-message");
       
         }
+        
       } catch (error) {
         thinkingMsg.remove();
         console.error("Search error:", error);
