@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const keywords = ["weather", "temperature", "winner", "score", "news", "today", "time"];
     const isRealTime = keywords.some(keyword => userInput.toLowerCase().includes(keyword));
 
+
     if (isRealTime) {
       try {
         const res = await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY_GOOGLE}&cx=${CX}&q=${encodeURIComponent(userInput)}`);
