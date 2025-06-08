@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     displayMessage(userInput, "user-message");
     inputField.value = "";
 
+
     // Show "🤔 Responding..." in chat
     const thinkingMsg = displayMessage("🤔 Responding...", "bot-message", true);
 
