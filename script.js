@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   sendButton.addEventListener("click", sendMessage);
-
   async function sendMessage() {
     const userInput = inputField.value.trim();
     if (!userInput) return;
