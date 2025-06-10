@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = await response.json();
         thinkingMsg.remove();
 
-
         const botReply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "🤖 Sorry, I couldn't understand that.";
         displayMessage(botReply, "bot-message");
       } catch (error) {
