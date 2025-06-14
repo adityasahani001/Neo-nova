@@ -54,8 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             contents: [{ parts: [{ text: userInput }] }]
           })
         });
-
-
+        
         const data = await response.json();
         thinkingMsg.remove();
 
