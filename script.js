@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+
   function displayMessage(text, className, returnElement = false) 
 {
     const chatBox = document.getElementById("chat-box");
