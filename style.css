@@ -88,7 +88,6 @@ h1 {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-
 /* Glowing thinking effect */
 .bot-message.thinking {
   animation: pulseGlow 1.5s infinite;
