@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-
   function convertMarkdownToHTML(markdown) {
     return markdown
       .replace(/^### (.*$)/gim, '<h3>$1</h3>')
