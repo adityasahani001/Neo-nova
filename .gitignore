@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Build files
+build/
+dist/
+*.spec
+
+# Credentials
+*.json
+!package.json

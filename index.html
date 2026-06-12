@@ -2,29 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Neo Nova - AI Assistant</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <!-- Font -->
-  
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-   
+  <!-- Orbitron Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"/>
+
   <!-- External Stylesheet -->
- 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 
-  <!-- Inline Markdown-Specific Enhancements -->
-  
+  <!-- Inline Styles: Markdown Enhancements & Header Layout -->
   <style>
-    .chat-box strong, .chat-box b {
+    /* === Markdown-specific styling inside chat box === */
+    .chat-box strong,
+    .chat-box b {
       color: #cb00ff;
     }
-
-    .chat-box em, .chat-box i {
+    .chat-box em,
+    .chat-box i {
       color: #ffaa00;
       font-style: italic;
     }
-
     .chat-box code {
       background-color: #222;
       color: #0f0;
@@ -32,61 +31,98 @@
       border-radius: 4px;
       font-family: monospace;
     }
-    
     .chat-box ul {
       padding-left: 20px;
       margin: 5px 0;
     }
-
     .chat-box li {
       margin-bottom: 5px;
     }
-    
     .chat-box a {
       color: #00ccff;
       text-decoration: underline;
     }
-
-    .chat-box h1, .chat-box h2, .chat-box h3 {
+    .chat-box h1,
+    .chat-box h2,
+    .chat-box h3 {
       color: #fff;
       margin: 10px 0 5px;
     }
-
     .chat-box br {
       line-height: 1.5;
     }
-
     .thinking-emoji {
       display: inline-block;
       animation: pulseGlow 1.5s infinite;
     }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.6; }
+    }
 
+    /* === Header: logo + title centered, side by side === */
+    .header-top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .logo-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #00fff7;
+      box-shadow: 0 0 15px rgba(0,255,255,0.3);
+      transition: transform 0.3s ease;
+    }
+    .logo-img:hover {
+      transform: scale(1.05);
+    }
+    .header-text h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #ff6600;
+    }
+    .subtitle {
+      margin: 0;
+      font-size: 14px;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
   <main class="container">
-    <header>
-      <h1>Neo Nova</h1>
-      <p class="subtitle">Your Futuristic AI Assistant</p>
+    <!-- Header with logo and text side by side -->
+    <header class="header-top">
+      <img src="N.jpg" alt="Neo Nova Logo" class="logo-img" />
+      <div class="header-text">
+        <h1>Neo Nova</h1>
+        <p class="subtitle">Your Futuristic AI Assistant</p>
+      </div>
     </header>
 
+    <!-- Chat display area -->
     <div class="chat-box" id="chat-box">
-
-      <!-- Chat messages will be dynamically inserted here -->
+      <!-- messages are injected here by script.js -->
     </div>
+
+    <!-- User input section -->
     <div class="input-area">
-      <input type="text" id="user-input" placeholder="Type your question..." aria-label="User input field" />
-      <button id="send-button">Send</button>
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your question..."
+        aria-label="User input field"
+      />
+      <button id="send-button" aria-label="Send message">Send</button>
     </div>
-
   </main>
 
-  <!-- JavaScript -->
+  <!-- Chatbot logic -->
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
